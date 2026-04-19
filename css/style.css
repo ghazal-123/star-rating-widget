@@ -1,0 +1,29 @@
+body {
+  font-family: Arial;
+  padding: 40px;
+}
+.rating {
+  display: flex;
+  gap: 5px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.star {
+  position: relative;
+  color: #ccc;
+} /* full star fill */
+.star.full {
+  color: gold;
+} /* half star */
+.star.half::after {
+  content: "★";
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  color: gold;
+}
+#text {
+  margin-top: 15px;
+  font-weight: bold;
+}
