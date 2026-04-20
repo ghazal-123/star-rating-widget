@@ -1,11 +1,21 @@
 body {
   font-family: Arial;
-  padding: 40px;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+}
+.container {
+  text-align: center;
+  transform: scale(1.5);
 }
 .rating {
   display: flex;
-  gap: 5px;
-  font-size: 40px;
+  justify-content: center;
+  gap: 10px;
+  font-size: 50px;
   cursor: pointer;
 }
 .star {
@@ -23,7 +33,14 @@ body {
   overflow: hidden;
   color: gold;
 }
+
 #text {
   margin-top: 15px;
-  font-weight: bold;
+  font-size: 24px;
+  color: chocolate;
+  background: #f8f9fa;
+  padding: 8px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 1px solid #eee;
 }
